@@ -20,11 +20,18 @@ NetMonitor es una herramienta ligera y de código abierto para monitorear la vel
 - Multiplataforma con Python (probado en Windows)
 - Código abierto, libre para usar, modificar y distribuir
 
+
+## Screenshots
+#### Icon Monitor
+![Icon Monitor](assets/Icon_Monitor.png)
+#### Icon Monitor Panel
+![Icon Monitor Panel](assets/Icon_Panel_Monitor.png)
+#### Text Monitor
+![Text Monitor](assets/Text_Monitor.png)
 ### Installation / Instalación
 #### Requirements / Requisitos
-Python 3.7 or higher / Python 3.7 o superior
-
-pip (Python package manager)
+- Python 3.7 or higher / Python 3.7 o superior
+- pip (Python package manager)
 - `psutil`
 - `pystray`
 - `Pillow`
@@ -50,4 +57,5 @@ pip (Python package manager)
 ## 🛠 Installer with Inno Setup
 1. Build executable using PyInstaller (see above).
 2. Use [Inno Setup](https://jrsoftware.org/isinfo.php) with this script (installer.iss):
+
 
