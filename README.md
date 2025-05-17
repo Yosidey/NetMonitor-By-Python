@@ -59,3 +59,13 @@ NetMonitor es una herramienta ligera y de código abierto para monitorear la vel
 2. Use [Inno Setup](https://jrsoftware.org/isinfo.php) with this script (installer.iss):
 
 
+## 📥 Descargas / Downloads
+
+- 🔽 [**Descargar Ejecutable** (MonitorInternet.exe)](./dist/main.exe)
+- 💿 [**Descargar Instalador** (Setup.exe)](./Output/NetMonitorSetup.exe)
+
+
+## 🖥️ Usage
+1. Run the installer or the .exe file.
+2. You'll see the icon in the system tray.
+3. Use the menu to show, hide, position, or move the hover text.

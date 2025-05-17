@@ -15,6 +15,9 @@ class MonitorInternet:
         self.texto_visible = False
         self.icon = None
         self.posicion_texto = "arriba_centro"
+        self.modo_arrastre = False
+        self.offset_x = 0
+        self.offset_y = 0
 
     def create_image(self):
         return Image.open("assets/monitor_internet.ico")
@@ -38,6 +41,8 @@ class MonitorInternet:
             print(f"Subida: {self.upload_speed:.2f} KB/s | Bajada: {self.download_speed:.2f} KB/s")
 
     def position_text(self):
+        if self.modo_arrastre:
+            return  # No posicionar si el modo arrastre está activo
         self.root.update_idletasks()
         w = self.root.winfo_width()
         h = self.root.winfo_height()
@@ -63,6 +68,27 @@ class MonitorInternet:
             self.root.after(0, self.position_text)
         icon_.update_menu()
 
+    def toggle_arrastre(self, icon_, item):
+        self.modo_arrastre = not self.modo_arrastre
+        if self.root:
+            if self.modo_arrastre:
+                self.root.bind("<Button-1>", self.iniciar_arrastre)
+                self.root.bind("<B1-Motion>", self.arrastrar)
+            else:
+                self.root.unbind("<Button-1>")
+                self.root.unbind("<B1-Motion>")
+                self.position_text()
+        icon_.update_menu()
+
+    def iniciar_arrastre(self, event):
+        self.offset_x = event.x
+        self.offset_y = event.y
+
+    def arrastrar(self, event):
+        x = event.x_root - self.offset_x
+        y = event.y_root - self.offset_y
+        self.root.geometry(f"+{x}+{y}")
+
     def create_menu(self):
         menu_positions = Menu(
             MenuItem("arriba_izquierda", self.change_position, checked=lambda item: self.posicion_texto == item.text, radio=True),
@@ -72,6 +98,8 @@ class MonitorInternet:
             MenuItem("abajo_izquierda", self.change_position, checked=lambda item: self.posicion_texto == item.text, radio=True),
             MenuItem("abajo_centro", self.change_position, checked=lambda item: self.posicion_texto == item.text, radio=True),
             MenuItem("abajo_derecha", self.change_position, checked=lambda item: self.posicion_texto == item.text, radio=True),
+            Menu.SEPARATOR,
+            MenuItem(lambda item: f"Modo arrastre: {'activado' if self.modo_arrastre else 'desactivado'}", self.toggle_arrastre, checked=lambda item: self.modo_arrastre)
         )
 
         return Menu(
