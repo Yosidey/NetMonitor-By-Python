@@ -3,22 +3,28 @@
 ### English
 NetMonitor is a lightweight open source tool to monitor your internet upload and download speeds in real-time. It runs silently in the system tray and optionally displays a floating text window on the screen with live speed updates.
 #### Features:
-- Real-time upload and download speed monitoring (KB/s)
-- System tray icon with live speed display
-- Floating text overlay with customizable position on screen, always visible over other applications.
-- Easy to use and minimal system resource usage
-- Cross-platform with Python (tested on Windows)
-- Open source and free to use, modify, and distribute
+- Displays current upload and download speeds.
+- Shows a floating overlay with current speeds.
+- Tray icon with context menu: 
+- Show/Hide speed overlay. 
+- Change text position (7 options). 
+- Enable/Disable drag mode. 
+- Enable/Disable auto start on Windows. 
+- Exit application.
+- Configuration saved between sessions: Drag mode, Auto start and Text position.
 
 ### Spanish
 NetMonitor es una herramienta ligera y de código abierto para monitorear la velocidad de subida y bajada de internet en tiempo real. Funciona silenciosamente en la bandeja del sistema y opcionalmente muestra un texto flotante en pantalla con actualizaciones en vivo de la velocidad.
 #### Características:
-- Monitoreo en tiempo real de velocidad de subida y bajada (KB/s)
-- Icono en bandeja del sistema con visualización de velocidad actual
-- Texto flotante personalizable en posición de pantalla, siempre visible sobre otras aplicaciones.
-- Fácil de usar y bajo consumo de recursos
-- Multiplataforma con Python (probado en Windows)
-- Código abierto, libre para usar, modificar y distribuir
+- Muestra las velocidades actuales de carga y descarga.
+- Muestra una superposición flotante con las velocidades actuales.
+- Icono en la bandeja con menú contextual:
+- Mostrar/Ocultar superposición de velocidad.
+- Cambiar la posición del texto (7 opciones).
+- Activar/Desactivar el modo de arrastre.
+- Activar/Desactivar el inicio automático en Windows.
+- Salir de la aplicación.
+- Configuración guardada entre sesiones: Modo de arrastre, Inicio automático y Posición del texto.
 
 
 ## Screenshots
