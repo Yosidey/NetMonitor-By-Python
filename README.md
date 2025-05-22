@@ -28,12 +28,19 @@ NetMonitor es una herramienta ligera y de código abierto para monitorear la vel
 
 
 ## Screenshots
+
 #### Icon Monitor
 ![Icon Monitor](assets/Icon_Monitor.png)
 #### Icon Monitor Panel
 ![Icon Monitor Panel](assets/Icon_Panel_Monitor.png)
 #### Text Monitor
 ![Text Monitor](assets/Text_Monitor.png)
+#### Text Text_Monitor_Unit
+![Text Text_Monitor_Unit](assets/Text_Monitor_Unit.png)
+#### Text_Monitor_Position
+![Text_Monitor_Position](assets/Text_Monitor_Position.png)
+
+
 ### Installation / Instalación
 #### Requirements / Requisitos
 - Python 3.7 or higher / Python 3.7 o superior
