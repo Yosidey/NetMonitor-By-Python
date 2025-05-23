@@ -128,7 +128,7 @@ class InternetMonitor:
 
             if self.root and self.text_var:
                 self.root.after(0, lambda: self.text_var.set(
-                    f"⬆ {self.upload_speed:.0f} {self.unit} ⬇ {self.download_speed:.0f} {self.unit}"))
+                    f"⬆ {self.upload_speed:.2f} {self.unit} ⬇ {self.download_speed:.2f} {self.unit}"))
 
            # print(f"Upload: {self.upload_speed:.2f} {self.unit} | Download: {self.download_speed:.2f} {self.unit}")
 
@@ -226,8 +226,8 @@ class InternetMonitor:
         )
 
         return Menu(
-            MenuItem(lambda _: f"Upload: {self.upload_speed:.1f} {self.unit}", lambda _: None, enabled=False),
-            MenuItem(lambda _: f"Download: {self.download_speed:.1f} {self.unit}", lambda _: None, enabled=False),
+            MenuItem(lambda _: f"Upload: {self.upload_speed:.2f} {self.unit}", lambda _: None, enabled=False),
+            MenuItem(lambda _: f"Download: {self.download_speed:.2f} {self.unit}", lambda _: None, enabled=False),
             Menu.SEPARATOR,
             MenuItem(lambda _: f"Text Status: {'Visible' if self.text_visible else 'Hidden'}", lambda _: None,
                      enabled=False),

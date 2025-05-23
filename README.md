@@ -72,10 +72,9 @@ NetMonitor es una herramienta ligera y de código abierto para monitorear la vel
 2. Use [Inno Setup](https://jrsoftware.org/isinfo.php) with this script ([**NetMonitor.iss**](./NetMonitor.iss)):
 
 
-## 📥 Descargas / Downloads
+## 📥 Downloads/Descargas
+- 🔽 [**Release** (Executable and Installer)](https://github.com/Yosidey/NetMonitor-By-Python/releases/tag/v1.0.0)
 
-- 🔽 [**Descargar Ejecutable** (MonitorInternet.exe)](./dist/main.exe)
-- 💿 [**Descargar Instalador** (Setup.exe)](./Output/NetMonitorSetup.exe)
 
 
 ## 🖥️ Usage
