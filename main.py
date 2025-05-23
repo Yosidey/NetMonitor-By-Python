@@ -90,9 +90,17 @@ class InternetMonitor:
         except Exception as e:
             print(f"Error saving config: {e}")
 
+    def resource_path(self, relative_path):
+        """ Get absolute path to resource, works for dev and for PyInstaller """
+        try:
+            base_path = sys._MEIPASS  # PyInstaller crea este atributo
+        except Exception:
+            base_path = os.path.abspath(".")
+
+        return os.path.join(base_path, relative_path)
     # Load icon image
     def create_image(self):
-        return Image.open("assets/monitor_internet.ico")
+        return Image.open(self.resource_path("monitor_internet.ico"))
 
     def format_speed(self, speed_bytes):
         # speed_kb = speed in KB/s

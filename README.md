@@ -69,7 +69,7 @@ NetMonitor es una herramienta ligera y de código abierto para monitorear la vel
 
 ## 🛠 Installer with Inno Setup
 1. Build executable using PyInstaller (see above).
-2. Use [Inno Setup](https://jrsoftware.org/isinfo.php) with this script (installer.iss):
+2. Use [Inno Setup](https://jrsoftware.org/isinfo.php) with this script ([**NetMonitor.iss**](./NetMonitor.iss)):
 
 
 ## 📥 Descargas / Downloads
